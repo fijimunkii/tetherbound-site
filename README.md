@@ -1,14 +1,20 @@
 # TetherBound site
 
-Public validation and product-information site for **TetherBound**.
+Public product-information site for **TetherBound**.
 
 **Give AI access. Keep it bounded.**
 
-TetherBound is a security-first MCP layer for giving **ChatGPT, Codex, and other MCP clients bounded access to machines over Tailscale**. Tailscale provides private connectivity and machine identity; TetherBound adds typed operations, local policy, hard bounds, and audit controls designed for AI access.
+TetherBound is a security-first MCP layer for giving **ChatGPT, Codex, and other MCP clients controlled access to machines over Tailscale**. Tailscale provides private connectivity and machine identity; TetherBound adds host admission, Bounded read-only tools, an explicit time-bounded Operator mode, execution/output limits, and audit controls designed for AI access.
 
-Useful discovery terms for the project include **ChatGPT + Tailscale**, **Tailscale MCP**, **ChatGPT MCP**, **Codex + Tailscale**, and **secure AI infrastructure access**. The product name remains TetherBound; this is not an official Tailscale or OpenAI product.
+Useful discovery terms for the project include **ChatGPT + Tailscale**, **Tailscale MCP**, **ChatGPT MCP**, **Codex + Tailscale**, **self-hosted MCP**, and **secure AI infrastructure access**. The product name remains TetherBound; this is not an official Tailscale or OpenAI product.
 
-This repository intentionally contains only public website content and early-access intake. The private incubation repository retains its historical `chatgpt-plugin-tailscale` name. The future public Community runtime repository is expected to use the canonical TetherBound name.
+The canonical open-source/self-hosted Community runtime is:
+
+- [`fijimunkii/chatgpt-plugin-tailscale`](https://github.com/fijimunkii/chatgpt-plugin-tailscale)
+
+The literal repository name is intentionally retained as a first-class distribution and discovery surface. **TetherBound** is the product and security model; **chatgpt-plugin-tailscale** is the public self-hosted Community project.
+
+This `tetherbound-site` repository contains only public website content and Cloud early-access intake. TetherBound Cloud is an optional hosted layer under validation; it is not required to run the Community product.
 
 ## Local preview
 
