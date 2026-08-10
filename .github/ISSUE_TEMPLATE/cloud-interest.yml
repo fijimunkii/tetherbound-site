@@ -1,0 +1,68 @@
+name: TetherBound Cloud early access
+about: Share a concrete use case and help validate the hosted product
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping validate TetherBound Cloud. Please describe your environment and workflow, but **do not include passwords, private keys, tokens, private IP addresses, customer data, logs, or other secrets**.
+  - type: textarea
+    id: context
+    attributes:
+      label: What do you operate?
+      description: A short description of your environment and your role in managing it.
+    validations:
+      required: true
+  - type: dropdown
+    id: fleet_size
+    attributes:
+      label: Approximate fleet size
+      options: ["1–2 machines", "3–10 machines", "11–50 machines", "51–250 machines", "More than 250 machines"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: operating_systems
+    attributes:
+      label: Which operating systems matter?
+      options:
+        - label: Linux
+        - label: Windows
+        - label: macOS
+        - label: Other / appliance OS
+  - type: textarea
+    id: questions
+    attributes:
+      label: What would you ask the AI?
+      description: Give 1–3 concrete recurring questions or diagnostic tasks.
+    validations:
+      required: true
+  - type: dropdown
+    id: preference
+    attributes:
+      label: Which product shape is more appealing?
+      options: ["Community / fully self-hosted", "Cloud / hosted MCP with customer-controlled Edge", "Both, depending on environment", "Not sure yet"]
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: What would make DIY too much work?
+  - type: textarea
+    id: concern
+    attributes:
+      label: What is your biggest security or trust concern?
+    validations:
+      required: true
+  - type: dropdown
+    id: interview
+    attributes:
+      label: Open to a design-partner conversation?
+      options: ["Yes", "Maybe", "No"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgment
+    attributes:
+      label: Sensitive-data check
+      options:
+        - label: I have not included credentials, secrets, private infrastructure identifiers, customer data, or logs.
+          required: true
